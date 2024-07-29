@@ -88,7 +88,7 @@ pipeline{
                 sh 'ansible --version'
                 sh 'sleep 180'
                 sh 'ansible-inventory --graph'
-                ansiblePlaybook credentialsId: 'dw', disableHostKeyChecking: true, installation: 'ansible', inventory: 'inventory_aws_ec2.yml', playbook: 'docker-project.yml'
+                ansiblePlaybook credentialsId: 'dw', disableHostKeyChecking: true, installation: 'ansible', inventory: 'inventory_aws_ec2.yml', playbook: 'docker-project.yaml'
              }
         }
 
