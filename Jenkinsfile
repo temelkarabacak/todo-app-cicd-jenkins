@@ -116,11 +116,11 @@ pipeline{
             sh 'docker image prune -af'
         }
 
-        success {
-             script {
-             slackSend channel: '#class-chat', color: '#439FE0', message: 'cw-todo-app is ready and pipeline passed succesfully', teamDomain: 'devops16tr', tokenCredentialId: 'jenkins-slack'
-                }
-         }
+        // success {
+        //      script {
+        //      slackSend channel: '#class-chat', color: '#439FE0', message: 'cw-todo-app is ready and pipeline passed succesfully', teamDomain: 'devops16tr', tokenCredentialId: 'jenkins-slack'
+        //         }
+        //  }
 
 
         failure {
